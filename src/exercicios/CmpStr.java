@@ -10,7 +10,7 @@ public class CmpStr {
 	 * There are also translations of full programs below.
 	 */
 	public static void main(String[] args) {
-		String user1,user2,pass1,pass2;
+		String user1,user2,pass1,pass2,userCheck,passCheck;
 	
 		
 		
@@ -21,19 +21,30 @@ public class CmpStr {
 		
 	
 			
-		
+		try(Scanner scanner = new Scanner(System.in)){
+		    //rest of your code
+			
 		System.out.println("Type your username:");
-	    int age = STDIN_SCANNER.nextInt();
+	
+		userCheck = scanner.nextLine();
+		System.out.println("Type your password:");
+		passCheck = scanner.nextLine();
 	   
-	    if (age >=0 && age <= 120) {
-	    	System.out.println("Okay..");	
-	    }
-	    else
-	    {
-	    	System.out.println("Impossible!");
-	    }
+		
+		if(userCheck.equals(user1) && passCheck.equals(pass1))
+		{
+			System.out.println("Logged in!");
+		}
+		else if (userCheck.equals(user2) && passCheck.equals(pass2))
+		{
+			System.out.println("Logged in!");
+		}
+		else
+		{
+			System.out.println("Error");
+		}
 	   
-	  
+		} 
 			  
 	   
 	   
