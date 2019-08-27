@@ -12,8 +12,19 @@ public class Principal {
 		   prod1.setB(STDIN_SCANNER.nextFloat());
 		   prod1.setC(STDIN_SCANNER.nextFloat());
 		
+		   System.out.println(prod1.bigABC());
 		   System.out.println(prod1.prodABC());
-		
+		   
+		   int a = (STDIN_SCANNER.nextInt());
+		   prod1.isPrimo(a);
+		   
+		   
+		    a = (STDIN_SCANNER.nextInt());
+		   System.out.println(prod1.calcAB(a));
+	
+		   a = (STDIN_SCANNER.nextInt());
+		   
+		   
 		
 	}
 
